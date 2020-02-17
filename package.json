@@ -1,0 +1,18 @@
+{
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "lerna": "3.20.2",
+    "husky": "4.0.10",
+    "lint-staged": "10.0.7",
+    "prettier": "1.19.1"
+  },
+  "name": "@eslint-typescript-bug/root",
+  "scripts": {
+    "bootstrap": "./node_modules/.bin/lerna bootstrap --hoist",
+    "lint": "./node_modules/.bin/lerna run lint --stream --parallel",
+    "prettier": "prettier \"packages/**/*.{js,jsx,ts,tsx}\" \"services/**/*.{js,jsx,ts,tsx}\" --write"
+  }
+}
